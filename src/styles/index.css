@@ -39,13 +39,79 @@ main {
 /* Colores */
 .red {
   background-color: red;
-  box-shadow: 0 0 20px red; /* Opcional: efecto de brillo */
+ 
 }
 .yellow {
   background-color: yellow;
-  box-shadow: 0 0 20px yellow;
+ 
 }
 .green {
   background-color: green;
-  box-shadow: 0 0 20px green;
+ 
+}
+.light-on{
+    box-shadow: 0px 0px 50px 20px rgb(219, 241, 190);
+}
+/* ... (mantén tu CSS anterior) ... */
+
+/* Estilo para la luz púrpura */
+.purple.light-on {
+  background-color: #800080; /* Púrpura sólido */
+}
+
+/* Estilo para el botón */
+.btn-add {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #eee;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  cursor: pointer;
+  font-family: sans-serif;
+}
+
+.btn-purple {
+  margin-top: 40px;
+  padding: 12px 30px;
+  font-family: 'Segoe UI', Roboto, sans-serif;
+  font-size: 14px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  color: #ffffff;
+  
+  /* Fondo con un degradado púrpura profundo y elegante */
+  background: linear-gradient(135deg, #6b4c9a 0%, #4a306d 100%);
+  
+  border: none;
+  border-radius: 4px; /* Un radio pequeño suele verse más profesional/elegante */
+  cursor: pointer;
+  
+  /* Sombra sutil y difusa */
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.15);
+  
+  /* Suaviza todos los cambios de estado */
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
+  position: relative;
+  overflow: hidden;
+}
+
+/* Efecto al pasar el mouse (Hover) */
+.btn-purple:hover {
+  background: linear-gradient(135deg, #7d5bb2 0%, #5a3b85 100%);
+  box-shadow: 0 6px 20px rgba(107, 76, 154, 0.3);
+  transform: translateY(-2px); /* Elevación sutil */
+  letter-spacing: 1.5px; /* Un pequeño detalle de expansión */
+}
+
+/* Efecto al hacer clic */
+.btn-purple:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Opcional: Si quieres que el botón desaparezca con estilo cuando ya existe el púrpura */
+.btn-purple:disabled {
+  opacity: 0;
+  pointer-events: none;
 }
